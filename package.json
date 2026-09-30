@@ -3,7 +3,26 @@
   "version": "0.1.0",
   "description": "Quick Reload — a one-click page refresh in the DSH sidebar foot, so hot-injected client plugins take effect without quitting the app.",
   "license": "MIT",
+  "author": "LYJS",
   "type": "module",
+  "scripts": {
+    "test": "node tests/quick-reload.smoke.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyjsyyds/dsh-quick-reload.git"
+  },
+  "homepage": "https://github.com/lyjsyyds/dsh-quick-reload#readme",
+  "bugs": {
+    "url": "https://github.com/lyjsyyds/dsh-quick-reload/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "reload",
+    "hot-reload"
+  ],
   "main": "./lib/index.js",
   "exports": {
     ".": "./lib/index.js",

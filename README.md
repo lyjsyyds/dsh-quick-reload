@@ -118,6 +118,21 @@ on the next start.
 - It only reloads the page and clears browser-side caches; it never writes to the
   profile, so it cannot break the plugin set.
 
+## Tests
+
+```powershell
+npm test            # or: node tests/quick-reload.smoke.mjs
+```
+
+`tests/quick-reload.smoke.mjs` loads the bundle the way the Host's module loader
+does (`window.__ModuleLoader__.load`), applies the plugin to a stub context,
+renders the overlay entry with a small React stand-in that really tracks state,
+and drives the whole click path against stubbed browser globals — Cache Storage,
+service workers, the `/plugins/events` SSE frame, the performance timeline and
+`fetch`. 19 checks, no dependencies, no network: it also pins the bounds (at most
+160 URLs, one revalidation per URL) and proves a wedged origin cannot hold the
+reload. A few checks are timing assertions, so the file takes about 3 seconds.
+
 ## License
 
 MIT © 2026 LYJS. Source: <https://github.com/lyjsyyds/dsh-quick-reload>
