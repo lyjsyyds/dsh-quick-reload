@@ -14,4 +14,4 @@
 # selection itself.
 - insert:
     - id: quick-reload
-      name: dsh-quick-reload
+      name: dsh-quick-reload-lyjs

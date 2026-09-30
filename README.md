@@ -86,11 +86,12 @@ the button.
 
 ## Install
 
-From the release tarball — prebuilt, nothing to compile (with the desktop app
-fully quit):
+The npm package name is **`dsh-quick-reload-lyjs`** (the plain `dsh-quick-reload`
+is taken on npm); the repository and the plugin id keep the short name. From the
+release tarball — prebuilt, nothing to compile (with the desktop app fully quit):
 
 ```powershell
-dsh plugin --profile desktop add https://github.com/lyjsyyds/dsh-quick-reload/releases/download/v0.1.0/dsh-quick-reload-0.1.0.tgz
+dsh plugin --profile desktop add https://github.com/lyjsyyds/dsh-quick-reload/releases/download/v0.1.1/dsh-quick-reload-lyjs-0.1.1.tgz
 ```
 
 Or through the GUI — **设置 → 插件 → 安装** — with that same URL as the spec.
@@ -105,7 +106,7 @@ dsh plugin --profile desktop add link:<absolute path to this directory>
 ## Remove
 
 Uninstall the bundle in **设置 → 插件** (or `dsh plugin --profile desktop remove
-dsh-quick-reload`) and drop it from `dsh.profile.bundles`; the button disappears
+dsh-quick-reload-lyjs`) and drop it from `dsh.profile.bundles`; the button disappears
 on the next start.
 
 ## Notes

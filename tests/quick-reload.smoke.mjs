@@ -273,7 +273,7 @@ console.log('\nQuick Reload smoke — package contract + browser half\n')
 
 // ── 1. package contract ───────────────────────────────────────────────────
 await check('package.json declares the bundle layer and ships the right files', () => {
-  assert.equal(pkg.name, 'dsh-quick-reload')
+  assert.equal(pkg.name, 'dsh-quick-reload-lyjs')
   assert.match(pkg.version, /^\d+\.\d+\.\d+$/)
   assert.equal(pkg.license, 'MIT')
   assert.equal(pkg.private, undefined, 'a private package cannot be published or listed')
@@ -294,7 +294,7 @@ await check('package.json declares the bundle layer and ships the right files', 
   }
   const patch = readFileSync(join(ROOT, 'cordis.patch.yml'), 'utf8')
   assert.match(patch, /- id: quick-reload/)
-  assert.match(patch, /name: dsh-quick-reload/)
+  assert.match(patch, /name: dsh-quick-reload-lyjs/)
 })
 
 await check('cordis.patch.yml names the package, not a path', () => {

@@ -1,6 +1,6 @@
 {
-  "name": "dsh-quick-reload",
-  "version": "0.1.0",
+  "name": "dsh-quick-reload-lyjs",
+  "version": "0.1.1",
   "description": "Quick Reload — a one-click page refresh in the DSH sidebar foot, so hot-injected client plugins take effect without quitting the app.",
   "license": "MIT",
   "author": "LYJS",
